@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalable vector graphics</title>
+<style>
+    #canvas{
+        height:100;
+        width: 200;
+        border:solid 1px black;
+    }
+</style>
+
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+<script>
+    //var can = document.getElementById("canvas");
+    //var context = can.getContext("2d");
+    //context.moveTo(0,0);
+    //context.lineTo(300,150);
+    //context.stroke();
+    
+    var can = document.getElementById("canvas");
+    var context = can.getContext("2d");
+    context.rect(0,0,500,150);
+    context.fillStyle="green";
+    context.fill();
+    context.linewidth=2;
+    context.srokestyle="black";
+    context.stroke();
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
